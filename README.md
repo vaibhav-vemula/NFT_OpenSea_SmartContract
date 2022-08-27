@@ -1,5 +1,13 @@
-# ERC721 NFT Smart Contract
+# NFT Smart Contract and listing NFT Collection on OpenSea Marketplace
 
+## Technologies Used -
+- ### HardHat
+- ### Solidity
+- ### Infura
+- ### Javascript
+
+
+&nbsp;
 ## Getting Started -
 
 ## To install all required packages -
