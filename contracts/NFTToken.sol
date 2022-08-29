@@ -19,7 +19,7 @@ contract NFTToken is ERC721Enumerable, Ownable {
 
     constructor(string memory name, string memory sym) ERC721(name, sym) {
         setBaseURI(
-            "https://bafybeiez3o4xbuwfbg4qpen5k6262mce53jbme3pulzypvek5gsj2kl6wa.ipfs.nftstorage.link/"
+            "<BASE URI>"
         );
         mint(msg.sender, 100);
     }
