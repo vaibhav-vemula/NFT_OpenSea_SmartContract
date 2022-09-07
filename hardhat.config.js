@@ -4,6 +4,7 @@ require("@nomiclabs/hardhat-etherscan");
 require("dotenv").config();
 require("solidity-coverage");
 require("hardhat-deploy");
+require("hardhat-deploy-ethers");
 
 const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL;
 const ETHEREUM_RPC_URL = process.env.ETHEREUM_RPC_URL;
@@ -37,6 +38,7 @@ module.exports = {
       accounts: [PRIVATE_KEY],
       blockConfirmations: 5,
       chainId: 80001,
+      allowUnlimitedContractSize: true,
     },
   },
   solidity: {

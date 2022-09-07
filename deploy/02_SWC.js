@@ -1,15 +1,14 @@
 const {network } = require("hardhat")
 const { verify } = require("../utils/verify")
 
-
 module.exports = async ({ getNamedAccounts, deployments }) => {
     const { deploy, log } = deployments
     const { deployer } = await getNamedAccounts()
 
-    const name = "test final"
-    const symbol = "tfffff"
+    const name = "Bla bla33333"
+    const symbol = "SWCbla"
 
-    const ourToken = await deploy("NFTToken", {
+    const ourToken = await deploy("SWC", {
       from: deployer,
       args: [name, symbol],
       log: true,
@@ -19,8 +18,8 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
     if (process.env.ETHERSCAN_API_KEY) 
     {
-      await verify(ourToken.address, [name, symbol])
+        await verify(ourToken.address, [name, symbol])
     }
   }
   
-module.exports.tags = ["all", "token"]
+module.exports.tags = ["all", "SWC"]
