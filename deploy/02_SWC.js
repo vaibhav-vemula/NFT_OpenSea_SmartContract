@@ -5,8 +5,8 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     const { deploy, log } = deployments
     const { deployer } = await getNamedAccounts()
 
-    const name = "Bla bla33333"
-    const symbol = "SWCbla"
+    const name = "NFT"
+    const symbol = "SWC"
 
     const ourToken = await deploy("SWC", {
       from: deployer,

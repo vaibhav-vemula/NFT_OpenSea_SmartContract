@@ -16,7 +16,7 @@ contract SWC is ERC721A, Ownable {
 
     constructor(string memory name, string memory sym) ERC721A(name, sym) {
         setBaseURI(
-            "<BASE URI>"
+            "BASE URL"
         );
         mint(10);
     }
